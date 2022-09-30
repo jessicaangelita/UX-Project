@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity"
+    android:background="@drawable/gradient_backround">
+
+    <TextView
+        android:id="@+id/welcomeUser2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="140dp"
+        android:text="About Us"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtnss"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backBtnss"
+        android:layout_width="37sp"
+        android:layout_height="37sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <Spinner
+        android:id="@+id/menuSpinner"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/dropdown_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUser2"
+        />
+
+    <ViewFlipper
+        android:id="@+id/carousel"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuSpinner">
+
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="85dp"
+        android:text="BlueJack Games"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carousel" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="313dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="49dp"
+        android:text="BlueJack Games is an application that provides a wide variety of games. Starting from action games, puzzles, FPS, and many more. Not only offline games, we also provide online games that can be played with your friends. We also provide a variety of very attractive offers such as discounts. Don't forget we always update new games that are interesting to play. We always prioritize customer satisfaction."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ProjectUX</string>
+
+    <string-array name="aboutus_array">
+        <item>About Us</item>
+        <item>Home</item>
+        <item>Product</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <string-array name="product_array">
+        <item>Product</item>
+        <item>Home</item>
+        <item>About Us</item>
+        <item>Log Out</item>
+    </string-array>
+
+</resources>

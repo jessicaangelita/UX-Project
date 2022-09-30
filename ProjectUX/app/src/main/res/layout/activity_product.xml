@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity"
+    android:background="@drawable/gradient_backround">
+
+    <TextView
+        android:id="@+id/welcomeUser2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="140dp"
+        android:text="Product"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtnss"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backBtnss"
+        android:layout_width="37sp"
+        android:layout_height="37sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <Spinner
+        android:id="@+id/menuSpinners"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/dropdown_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUser2"
+        />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="588dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuSpinners">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="207dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/forest_card">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="top"
+                        android:background="@drawable/product_button">
+
+                        <ImageView
+                            android:id="@+id/forest_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="121dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:maxWidth="150dp"
+                            android:maxHeight="150dp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/product_image1" />
+
+                        <TextView
+                            android:id="@+id/forest_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="The Forest"
+                            android:textAlignment="center"
+                            android:textColor="#04BBEC" />
+
+                        <TextView
+                            android:id="@+id/forest_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Rp. 108.999"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+                        <TextView
+                            android:id="@+id/forest_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:gravity="center"
+                            android:text="2018"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="207dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/pico_card">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="top"
+                        android:background="@drawable/product_button">
+
+                        <ImageView
+                            android:id="@+id/pico_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="121dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:maxWidth="150dp"
+                            android:maxHeight="150dp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+                            app:srcCompat="@drawable/product_image2" />
+
+                        <TextView
+                            android:id="@+id/pico_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="PICO PARK"
+                            android:textAlignment="center"
+                            android:textColor="#04BBEC" />
+
+                        <TextView
+                            android:id="@+id/pico_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:gravity="center"
+                            android:text="Rp. 39.999"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+                        <TextView
+                            android:id="@+id/pico_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:gravity="center"
+                            android:text="2021"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="207dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/force_card">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="top"
+                        android:background="@drawable/product_button">
+
+                        <ImageView
+                            android:id="@+id/force_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="121dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:maxWidth="150dp"
+                            android:maxHeight="150dp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/product_image3" />
+
+                        <TextView
+                            android:id="@+id/force_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="Jump Force"
+                            android:textAlignment="center"
+                            android:textColor="#04BBEC" />
+
+                        <TextView
+                            android:id="@+id/force_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:gravity="center"
+                            android:text="Rp. 10.000"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+                        <TextView
+                            android:id="@+id/force_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:gravity="center"
+                            android:text="2019"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="207dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/sot_card">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="top"
+                        android:background="@drawable/product_button">
+
+                        <ImageView
+                            android:id="@+id/sot_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="121dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:maxWidth="150dp"
+                            android:maxHeight="150dp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+                            app:srcCompat="@drawable/product_image4" />
+
+                        <TextView
+                            android:id="@+id/sot_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="Sea Of Thieves"
+                            android:textAlignment="center"
+                            android:textColor="#04BBEC" />
+
+                        <TextView
+                            android:id="@+id/sot_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:gravity="center"
+                            android:text="Rp. 169.999"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+                        <TextView
+                            android:id="@+id/sot_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:gravity="center"
+                            android:text="2020"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="207dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/sims_card">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="top"
+                        android:background="@drawable/product_button">
+
+                        <ImageView
+                            android:id="@+id/sims_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="121dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:maxWidth="150dp"
+                            android:maxHeight="150dp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/product_image5" />
+
+                        <TextView
+                            android:id="@+id/sims_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="The Sims™ 4"
+                            android:textAlignment="center"
+                            android:textColor="#04BBEC" />
+
+                        <TextView
+                            android:id="@+id/sims_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:gravity="center"
+                            android:text="Rp. 239.000"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+                        <TextView
+                            android:id="@+id/sims_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:gravity="center"
+                            android:text="2014"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="207dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="60dp"
+                    android:id="@+id/journey_card">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="top"
+                        android:background="@drawable/product_button">
+
+                        <ImageView
+                            android:id="@+id/journey_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:maxWidth="150dp"
+                            android:maxHeight="150dp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+                            app:srcCompat="@drawable/product_image6" />
+
+                        <TextView
+                            android:id="@+id/journey_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="Journey"
+                            android:textAlignment="center"
+                            android:textColor="#04BBEC" />
+
+                        <TextView
+                            android:id="@+id/journey_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:gravity="center"
+                            android:text="Rp. 95.999"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+                        <TextView
+                            android:id="@+id/journey_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:gravity="center"
+                            android:text="2020"
+                            android:textAlignment="center"
+                            android:textColor="#FF82F4" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
